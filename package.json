@@ -1,0 +1,21 @@
+{
+	"name": "static-testing-tools",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"build": "babel src --out-dir dist",
+		"lint": "eslint --ignore-path .gitignore .",
+		"format": "prettier --ignore-path .gitignore --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|graphql)\""
+	},
+	"keywords": [],
+	"license": "MIT",
+	"devDependencies": {
+		"@babel/cli": "^7.10.5",
+		"@babel/core": "^7.10.5",
+		"@babel/preset-env": "^7.10.4",
+		"eslint": "^7.5.0",
+		"eslint-config-prettier": "^6.11.0",
+		"prettier": "^2.0.5"
+	}
+}
